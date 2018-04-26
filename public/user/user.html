@@ -1,0 +1,24 @@
+<div class="page__main" style="width: 1280px; margin: auto;" ng-if="allUsers">
+    <div class="page-title">
+        <table class="table">
+            <thead>
+            <tr class="table-row">
+                <th class="cell">№</th>
+                <th class="cell">First name</th>
+                <th class="cell">Last name</th>
+                <th class="cell">Email</th>
+                <th class="cell">Phone</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="user in users"  class="table-row">
+                <td align="center" width="20px"  class="cell">{{ $index+1 }}</td>
+                <td  class="cell name-column" ng-click="updateUserInfo(user)">{{user.firstName}}</td>
+                <td  class="cell">{{user.lastName}}</td>
+                <td  class="cell">{{user.email}}</td>
+                <td  class="cell">{{user.phone}}</td>
+            </tbody>
+        </table>
+    </div>
+    <button type="button" class="btn btn-primary" ng-click="createUser()">newUser</button>
+</div>

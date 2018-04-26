@@ -1,0 +1,27 @@
+.form-item {
+    padding: 10px;
+}
+.table{
+    width: 100%;
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+.cell {
+    padding: 5px 20px;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+.name-column{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.table-row {
+    border: 1px solid #000000;
+    background-color: #b9def0;
+}
+
+.table-row:hover {
+    background-color: #9cc9f0;
+}
